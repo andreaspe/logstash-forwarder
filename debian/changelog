@@ -1,4 +1,4 @@
-logstash-forwarder (0.3.2~git66c29b5cb) unstable; urgency=low
+logstash-forwarder (0.3.2~git1+a4ae81a1e4344) unstable; urgency=low
 
   * KOPS-67: Initial release
     - Build a native package from our own github fork.

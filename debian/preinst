@@ -19,6 +19,12 @@ case "$1" in
     # Ensure the old daemon is stopped
     invoke-rc.d logstash-forwarder stop
     ;;
+    install)
+    # do nothing
+    ;;
+    abort-upgrade)
+    invoke-rc.d logstash-forwarder start
+    ;;
     *)
         echo "preinst called with unknown argument \`$1'" >&2
         exit 1
