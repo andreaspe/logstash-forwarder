@@ -1,0 +1,8 @@
+logstash-forwarder (0.3.2~git66c29b5cb) unstable; urgency=low
+
+  * KOPS-67: Initial release
+    - Build a native package from our own github fork.
+    - Fix go version check in Makefile.
+    - publishers1.go: don't verify ssl certificate (which is bad, obviously).
+    - Added build-dep on backported golang-go package.
+ -- Andreas Putzo <andreas@putzo.net>  Wed, 25 Jun 2014 11:46:30 +0200

@@ -1,0 +1,10 @@
+# Defaults for logstash-forwarder initscript
+# sourced by /etc/init.d/logstash-forwarder
+# installed at /etc/default/logstash-forwarder by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Additional options that are passed to the Daemon.
+DAEMON_ARGS="-config /etc/logstash-forwarder/config.json -spool-size 1000 -log-to-syslog"

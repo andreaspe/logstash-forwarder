@@ -1,0 +1,5 @@
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/logstash-forwarder" ]; then
+	invoke-rc.d logstash-forwarder stop || exit $?
+fi
+# End automatically added section

@@ -1,0 +1,20 @@
+Source: logstash-forwarder
+Section: utils
+Priority: optional
+Maintainer: Andreas Putzo <andreas@putzo.net>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1~), golang-go (>> 1.0.2)
+Standards-Version: 3.9.4
+Homepage: https://github.com/andreaspe/logstash-forwarder
+#Vcs-Git: git://anonscm.debian.org/collab-maint/logstash-forwarder.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/logstash-forwarder.git;a=summary
+
+Package: logstash-forwarder
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Log shipping tool for logstash
+ Lightweight replacement for to ship logfiles to 
+ a central logstash instance.
+ .
+ This is a github fork of the upstream repo of
+ logstash-forwader (aka lumberjack) with minor
+ customizations.

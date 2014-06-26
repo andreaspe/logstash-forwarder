@@ -1,0 +1,2 @@
+build/bin/logstash-forwarder /usr/bin
+logstash-forwarder.conf.example /etc/logstash-forwarder
