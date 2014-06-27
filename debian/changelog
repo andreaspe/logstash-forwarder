@@ -1,3 +1,12 @@
+logstash-forwarder (0.3.2~git3) unstable; urgency=medium
+
+  * Remove git commit from version string.
+  * harvester: Unmonitor files after 1hour of inactivity 
+    (before: 24h) to prevent servers with a high log volume
+    running out of disk space.
+
+ -- Andreas Putzo <andreas@putzo.net>  Fri, 27 Jun 2014 14:13:41 +0200
+
 logstash-forwarder (0.3.2~git2+fc3ee73d0537c) unstable; urgency=medium
 
   * Fix preinst, was failing on new installs
