@@ -16,14 +16,17 @@ set -e
 
 case "$1" in
     upgrade)
-    # Ensure the old daemon is stopped
-    invoke-rc.d logstash-forwarder stop
+    # Manually stop logstash-forwarder when upgrading
+    # from an upstream package which has the binary
+    # reside in /opt
+    if dpkg --compare-versions 0.3.1 eq 0.3.1; then
+        invoke-rc.d logstash-forwarder stop || true
+    fi
     ;;
     install)
     # do nothing
     ;;
     abort-upgrade)
-    invoke-rc.d logstash-forwarder start
     ;;
     *)
         echo "preinst called with unknown argument \`$1'" >&2

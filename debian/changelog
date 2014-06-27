@@ -1,3 +1,9 @@
+logstash-forwarder (0.3.2~git2+fc3ee73d0537c) unstable; urgency=medium
+
+  * Fix preinst, was failing on new installs
+
+ -- Andreas Putzo <andreas@putzo.net>  Thu, 26 Jun 2014 17:26:11 +0200
+
 logstash-forwarder (0.3.2~git1+a4ae81a1e4344) unstable; urgency=low
 
   * KOPS-67: Initial release
